@@ -16,3 +16,15 @@
 - Change bean scope of `TennisPlayer` bean and display it's influence using 'check' endpoint.
 - Add initialization and destruction methods to `CricketCoach` bean.
 - Configure spring container using Java-Based configuration (`swimCoach` bean).
+
+#### Spring JPA (Hibernate)
+- Connect to a database.
+- Use `CommandLineRunner` bean.
+- Create an entity class `Student`.
+- Create an DAO class `StudentDAO`.
+- Do CRUD (Create, Read, Update, Delete) operations.
+	- write some specific queries for CRUD operations.
+	- use Named Parameters in queries.
+- Create database table automatically from our app.
+	- using `create` value in `application.properties` file.
+	- !Warning! everytime you run the app, tables dropped then created.
