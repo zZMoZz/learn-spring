@@ -28,3 +28,16 @@
 - Create database table automatically from our app.
 	- using `create` value in `application.properties` file.
 	- !Warning! everytime you run the app, tables dropped then created.
+
+#### Spring Rest
+
+How to design a REST API to handle database operations (CRUD).
+
+- Setup database and connect to it.
+- Create `Employee` POJO class and prepare it as entity.
+- Implement `Employee` DAO & Service.
+- Create Rest API controller to handle employee operations.
+- Make specific Exception and handle it using global exception.
+- Create the same project using `JpaRepository`, `Spring Data Rest` techniques.
+- Configure and explore some `Spring Data Rest` properties and features.
+	- Pagination, Sorting, Resource name.
