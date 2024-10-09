@@ -41,3 +41,17 @@ How to design a REST API to handle database operations (CRUD).
 - Create the same project using `JpaRepository`, `Spring Data Rest` techniques.
 - Configure and explore some `Spring Data Rest` properties and features.
 	- Pagination, Sorting, Resource name.
+
+#### Spring Security
+
+Handling Authentication and Authorization process with help of spring security framework.
+
+- Implement previous section again using `JpaRepository` with services (not provided in previous sections).
+- Enable spring security by inject `spring-security` dependency.
+	- change default username and password in `application.properties` file.
+- Configure authentication with define users credentials (In Memory).
+- Configure Authorization using `SecurityFilterChain`.
+- Configure authentication with define users credentials (In Database).
+	- Auto database access.
+	- Customize database access.
+- Use `Bcrypt` algorithm in storing user password.
