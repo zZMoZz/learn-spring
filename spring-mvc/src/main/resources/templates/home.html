@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!-- this namespace used to distinguish Thymeleaf-specific attributes from standard HTML attributes -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- connect html file with css file -->
+    <!-- spring automatically will search in resources/static -->
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+</head>
+<body>
+<h2 class="fun">Hello Everybody.</h2>
+</body>
+</html>

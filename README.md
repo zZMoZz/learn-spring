@@ -55,3 +55,27 @@ Handling Authentication and Authorization process with help of spring security f
 	- Auto database access.
 	- Customize database access.
 - Use `Bcrypt` algorithm in storing user password.
+
+#### Spring MVC
+
+Implement MVC application with `Thymeleaf` template engine.
+
+- Create MVC controller to handle client requests.
+- Add `Thymeleaf` template engine dependency to can use with spring MVC.
+- Apply some local CSS in our project.
+- Perform lifecycle of form process.
+	- create method handles client request.
+	- create method handle form confirmation.
+	- create two html files, one to show form, second to show confirm information.
+	- use `Model` as data container.
+	- create `Student` class to save returned data in submission form request.
+	- know annotations like `@ModelAttribute`,`@RequestParam`.
+- Practice several form inputs.
+	- text, checkbox, radio, select.
+	- avoid hard coding values with help of properties file.
+- Do some data validation.
+	- required fields, number range, regular expressions.
+	- use `@InitBinder` to handle request parameters before binding process.
+	- handle passing string to integer field errors.
+	- Write validation error messages outside the code in `messages.properties` file.
+- Do custom validation.

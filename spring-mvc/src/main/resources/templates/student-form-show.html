@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
+    <style>
+        .error {color:red}
+    </style>
+</head>
+
+<body>
+    <form th:action="@{/studentForm}" th:object="${student}" method="POST">
+
+        First name: <input type="text" th:field="*{firstName}"/>
+
+        <!-- `th:if` includes or excludes this element based on expression result -->
+        <!-- `fields` provides methods related to form fields -->
+        <!-- `th:errors` display error message of specific field -->
+        <span th:if="${#fields.hasErrors('firstName')}"
+              th:errors="*{firstName}"
+              class="error"></span>
+        <br><br>
+
+        Last name: <input type="text" th:field="*{lastName}"/>
+        <br><br>
+
+        Age: <input type="text" th:field="*{age}"/>
+
+        <span th:if="${#fields.hasErrors('age')}"
+              th:errors="*{age}"
+              class="error"></span>
+        <br><br>
+
+        Postal Code: <input type="text" th:field="*{postalCode}"/>
+
+        <span th:if="${#fields.hasErrors('postalCode')}"
+              th:errors="*{postalCode}"
+              class="error"></span>
+        <br><br>
+
+
+
+        Country:
+        <select th:field="*{country}">
+            <option th:each="tCountry : ${countries}" th:value="${tCountry}" th:text="${tCountry}"/>
+        </select>
+        <br><br>
+
+        Favourite Programming Language:
+        <!-- value: value that will stored in field -->
+        <!-- field: connected field with this element -->
+        <!-- normal text: text that appears to the client -->
+        <input type="radio" th:value="python" th:field="*{favLang}">Python</input>
+        <input type="radio" th:value="go" th:field="*{favLang}">GO</input>
+        <input type="radio" th:value="java" th:field="*{favLang}">Java</input>
+        <br><br>
+
+        Favourite Operating Systems:
+        <input type="checkbox" th:field="*{favOS}" th:each="tempOS : ${os}"
+                               th:value="${tempOS}" th:text="${tempOS}"/>
+        <br><br>
+
+        <input type="submit" value="submit"/>
+    </form>
+</body>
+
+</html>
