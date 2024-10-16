@@ -1,6 +1,9 @@
 package com.example.spring_mvc_crud.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 
 // `@Entity`: marks the class as JPA entity. without it the class will not mapped to db table
 //            because Hibernate will not recognize this class as entity
@@ -14,12 +17,17 @@ public class Employee {
     @Column(name = "id")
     private int id;
 
+    @NotNull(message = "is required")
+    @Size(min = 1, message = "is required") // user may pass empty string
     @Column(name = "first_name")
     private String firstName;
 
+    @NotNull(message = "is required")
+    @Size(min = 1, message = "is required")
     @Column(name = "last_name")
     private String lastName;
 
+    @Pattern(regexp = "^[a-zA-Z0-9._%+-]+@gmail\\.com$", message = "please follow this patten 'username@gmail.com'")
     @Column(name = "email")
     private String email;
 
@@ -75,6 +83,7 @@ public class Employee {
         this.firstName = firstName;
     }
 
+    // if any print process happened to this object. this is the result.
     @Override
     public String toString() {
         return "Employee{" +
@@ -84,4 +93,5 @@ public class Employee {
                 ", email='" + email + '\'' +
                 '}';
     }
+
 }

@@ -1,4 +1,14 @@
 ## Explore Spring Boot
+
+### Table of Contents
+1. [Spring Overview](#Spring-Overview)
+2. [Spring Core](#Spring-Core)
+3. [Spring JPA (Hibernate)](#Spring-JPA-(Hibernate))
+4. [Spring Rest](#Spring-Rest)
+5. [Spring Security](#Spring-Security)
+6. [Spring MVC](#Spring-MVC)
+7. [Spring MVC CRUD](#Spring-MVC-CRUD)
+
 #### Spring Overview
 - Make the server load automatically using dev-tools.
 - Add basic spring security with specified username & password.
@@ -79,3 +89,15 @@ Implement MVC application with `Thymeleaf` template engine.
 	- handle passing string to integer field errors.
 	- Write validation error messages outside the code in `messages.properties` file.
 - Do custom validation.
+
+#### Spring MVC CRUD
+
+- Reuse `EmployeeService` & `EmployeeRepository` from previous projects.
+- Add css bootstrap styles from internet.
+- Create a logic to get all employees.
+- Create a logic to add an employee.
+- Create a logic to update an employee.
+- Create a logic to delete an employee.
+- Add some validation rules.
+- Sort results based on first name.
+- Make index page redirect to `employees/list` url.
