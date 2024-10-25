@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+
+<body>
+    <h3>Login Form</h3>
+    <br>
+    <!-- Method must be POST -->
+    <!-- spring will detect inputs from name attribute "username" & "password" so don't change them -->
+    <form action="#" th:action="@{/authenticateTheUser}" method="POST">
+        <!-- show error message if login failed -->
+        <div th:if="${param.error}">
+            <i class="error">Invalid username & password</i>
+        </div>
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username"/>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"/>
+        <input type="submit" value="Login"/>
+    </form>
+</body>
+</html>

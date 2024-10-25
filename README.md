@@ -3,11 +3,12 @@
 ### Table of Contents
 1. [Spring Overview](#Spring-Overview)
 2. [Spring Core](#Spring-Core)
-3. [Spring JPA (Hibernate)](#Spring-JPA-(Hibernate))
+3. [Spring JPA (Hibernate)](#Spring-JPA-Hibernate)
 4. [Spring Rest](#Spring-Rest)
 5. [Spring Security](#Spring-Security)
 6. [Spring MVC](#Spring-MVC)
 7. [Spring MVC CRUD](#Spring-MVC-CRUD)
+8. [Spring Security MVC](#Spring-Security-MVC)
 
 #### Spring Overview
 - Make the server load automatically using dev-tools.
@@ -27,7 +28,7 @@
 - Add initialization and destruction methods to `CricketCoach` bean.
 - Configure spring container using Java-Based configuration (`swimCoach` bean).
 
-#### Spring JPA (Hibernate)
+#### Spring JPA Hibernate
 - Connect to a database.
 - Use `CommandLineRunner` bean.
 - Create an entity class `Student`.
@@ -101,3 +102,16 @@ Implement MVC application with `Thymeleaf` template engine.
 - Add some validation rules.
 - Sort results based on first name.
 - Make index page redirect to `employees/list` url.
+
+
+#### Spring Security MVC
+
+We implement same things in previous security section with new things.
+
+- Create custom login form.
+- Show login error messages.
+- Add logout feature to the app.
+- Display username and roles.
+- Restrict access based on roles.
+- Display content based on roles.
+- Create custom access denied page.
