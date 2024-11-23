@@ -9,6 +9,7 @@
 6. [Spring MVC](#Spring-MVC)
 7. [Spring MVC CRUD](#Spring-MVC-CRUD)
 8. [Spring Security MVC](#Spring-Security-MVC)
+9. [Spring JPA Advanced] (#Spring-JPA-Advanced)
 
 #### Spring Overview
 - Make the server load automatically using dev-tools.
@@ -115,3 +116,14 @@ We implement same things in previous security section with new things.
 - Restrict access based on roles.
 - Display content based on roles.
 - Create custom access denied page.
+
+
+#### Spring JPA Advanced
+
+- Implement one-to-one relation.
+	- Bi-directional.
+	- Uni-directional.
+- Cascade operations.
+- Implement Many-to-one relation.
+- Implement Many-to-Many relation.
+- Manipulate with fetch types (Lazy and Eager).
