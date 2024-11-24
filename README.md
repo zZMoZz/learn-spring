@@ -9,7 +9,7 @@
 6. [Spring MVC](#Spring-MVC)
 7. [Spring MVC CRUD](#Spring-MVC-CRUD)
 8. [Spring Security MVC](#Spring-Security-MVC)
-9. [Spring JPA Advanced] (#Spring-JPA-Advanced)
+9. [Spring JPA Advanced](#Spring-JPA-Advanced)
 
 #### Spring Overview
 - Make the server load automatically using dev-tools.
